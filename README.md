@@ -1,3 +1,3 @@
 # HTML5
 
-Ulike prosjekter med HTML
+Ulike prosjekter med HTML5
