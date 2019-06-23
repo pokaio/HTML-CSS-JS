@@ -1,0 +1,75 @@
+/* Alt som står mellom her er kommentar og kommer ikke på nettsiden din.
+   Vi bruker det til å legge igjen en kommentar til oss selv eller for andre
+   som skal lese koden vår.
+ */
+body {
+  margin: 0;
+}
+
+.top {
+  height:100vh;
+  width: 100%;
+  overflow: hidden;  /*Viktig*/
+}
+
+#top-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.background {
+  background-image: url("https://tinyurl.com/y8by2x74");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Her begynner ekstra stoffet til de interesserte (optional) */
+.zoom {
+  animation: scale 40s linear infinite;
+}
+
+@keyframes scale {
+  50% {
+    /*De 4 linjene nedenfor er samme kode men for eldre nettlesere (versjon)*/
+    -webkit-transform:scale(1.2); /*Safari nettleser*/
+    -moz-transform:scale(1.2); /*Firefox*/
+    -ms-transform:scale(1.2); /*Microsoft explorer */
+    -o-transform:scale(1.2); /*Opera*/
+    transform:scale(1.2);
+  }
+}
+/* Her stopper ekstra stoffet */
+
+#text-body {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  html, #text-body, img{
+    max-width:355px;
+    margin: 0 auto;
+  }
+}
+
+/*
+a {
+  font-size: 40px;
+  color:black;
+  text-decoration: none;
+  padding: 15px;
+}
+*/

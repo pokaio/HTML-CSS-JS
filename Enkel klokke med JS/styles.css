@@ -1,0 +1,50 @@
+/* for å henvise til font i samme mappe. Referere direkte til nettside:*/
+/* @import url('https://fonts.googleapis.com/css?family=Orbitron'); */
+@font-face {
+  font-family: "Orbitron-Regular";
+  src:url("./Orbitron-Regular.ttf");
+}
+
+/* tilpasser innholdet og margin/border samtidig */
+/* for å fjerne default margin/padding i browseren */
+/* The * selector selects all elements. */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* bakgrunnskilde kan genereres her: https://pattern.flaticon.com/ */
+body {
+  background: url("./background.png");
+}
+
+.main {
+  background: #ccc;
+  width: 400px; /* størrelsen på grå boks (x-aksen) */
+  height: 175px;  /* størrelsen på grå boks (y-aksen) */
+  margin: 100px auto; /* null-tallet = margin top/bottom (y-aksen), mens auto = left/right (x-aksen)*/
+  position: relative; /* gjør at posisjonen til 'badge' følger sin div, og ikke starter i øvre venstre hjørne av nettsiden. Vil ellers få problem når vi zoomer */
+  padding: 30px; /* endrer alle sidene */
+}
+.badge {
+  width: 96px;
+  background: #e66357;
+  color: white;
+  padding: 5px 10px; /* 5px kontrollerer y-aksen og 10px = x-aksen */
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute; /* gjør at vi kan flytte 'badge' overalt ved å bruke koordinatsystemet */
+  top: -15px; /* y-aksen, se kommentar over */
+  left: 40%; /* x-aksen */
+}
+
+.clock {
+  background: #EBEBEBEB;
+  text-align: center;
+  font-size: 55px;
+  height: 100%; /* gjør at backgrunnsfargen er lik høyden i main-div (.main) */
+  padding-top:23px;
+  font-family: Orbitron-Regular;
+  border-radius: 7px;
+}

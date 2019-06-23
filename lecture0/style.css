@@ -1,0 +1,32 @@
+body, main {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: 0;
+
+}
+button {
+
+}
+
+h1 {
+  text-align:center;
+}
+/*Changes background-color when the screen-width is less than 980px (found when inspecting with dev tool)*/
+@media only screen and (max-width: 980px) {
+  body {
+    background-color:lightblue;
+  }
+}
+
+/*To help us visualize the the columns*/
+.col {
+  border: solid;
+}
+
+#page_navigation {
+
+}
+
+#image {
+  display:block;
+}
